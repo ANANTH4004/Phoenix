@@ -1,0 +1,9 @@
+
+# Bootstrap Installation :
+    npm i bootstrap => style + ["../node_modules/bootstrap/dist/css/bootstrap.min.css"]
+    scripts -> ["./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"].
+
+# Angular Material
+    nd add @angular/material.
+
+# 

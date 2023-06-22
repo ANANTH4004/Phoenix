@@ -219,7 +219,7 @@ table {
     font-family: 'Geologica', sans-serif;
   
     border-right: 2px solid white;
-  
+  align-items: center;
     color: rgba(0, 0, 0, 0.87);
   
   }
@@ -292,9 +292,9 @@ table {
   
   .passenger {
   
-    width: 68px;
+    // width: 68px;
   
-    height: 16px;
+    // height: 16px;
   
   
   
@@ -471,9 +471,6 @@ table {
   
     height: 17px;
   
-  
-  
-  
     /* Sub Heading 1 */
   
   
@@ -546,46 +543,12 @@ table {
   
   
   .des {
-  
-  
-  
-  
-  
-    /* Body 2 */
-  
-  
-  
-  
+    width: 67%;
     font-family: 'Roboto';
-  
     font-style: normal;
-  
     font-weight: 400;
-  
     font-size: 14px;
-  
- 
-  
-  
-  
-    /* On Surface/High Emphasis */
-  
-  
-  
-  
     color: rgba(0, 0, 0, 0.87);
-  
-  
-  
-  
-  
-    /* Inside auto layout */
-  
-  
-  
-  
-    
-  
   }
   
   
@@ -643,10 +606,6 @@ table {
     padding: 8px 16px;
   
     gap: 12px;
-  
-  
-  
-  
     width: 329px;
   
     height: 40px;
@@ -751,7 +710,7 @@ table {
   
     gap: 12px;
   
-    margin-left: 872px;
+    margin-left: 690px;
   
       width: 221px;
   
@@ -1443,7 +1402,7 @@ table {
   
     margin-top: -40px;
   
-    color: rgba(0, 0, 0, 0.38);
+    color: rgba(207, 13, 13, 0.38);
   
   }
   

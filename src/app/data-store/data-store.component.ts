@@ -97,4 +97,24 @@ export class DataStoreComponent {
 
   data1 : any[]= data;
 
+  sort(){
+    this.data1 = [
+      {
+        title : "Passenger Booking",
+    
+        records : "2345",
+    
+        fields : "10",
+    
+        lastModified : "10 hours ago",
+    
+        modifiedBy : "Auto update",
+    
+        description : "This dataset contains the passenger booking data",
+    
+        path : "assets/statics.png"
+    
+      }]
+  }
+
 }

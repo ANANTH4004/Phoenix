@@ -5,7 +5,7 @@
 3. ngFor Core directive.
 4. ngIf & Elvis operator.
 5. ngClass & ng Style.
-6. ngSwitch & **Bold/strong ngContainer**
+6. ngSwitch & **ngContainer**
 7. Angular Built-In Pipes
 8. Angular View Child Decorator & View Children Decorator
 9. Angular Content Projection with ng-content

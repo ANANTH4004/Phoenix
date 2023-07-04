@@ -7,11 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataStoreComponent } from './data-store/data-store.component';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './Material/material.module';
+import { TableComponent } from './table/table.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataStoreComponent
+    DataStoreComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,8 @@ import { MaterialModule } from './Material/material.module';
     BrowserAnimationsModule,
     FormsModule,
     MatIconModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

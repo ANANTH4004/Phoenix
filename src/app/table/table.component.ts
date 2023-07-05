@@ -4,6 +4,7 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { User } from 'src/Classes & Interface/User';
 import { TableService } from '../Services/table.service';
 import { MatSort } from '@angular/material/sort';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-table',
@@ -11,9 +12,9 @@ import { MatSort } from '@angular/material/sort';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit{
-addRows(event:any) {
-  this.clickedRow.add(event.target.value);
-}
+
+  nameSearch !:string;
+
   displayedColumns: string[] = ['userId', 'firstName', 'lastName', 'phoneNumber', 'emailAddress'];
   dataSource = new MatTableDataSource<User>();
   //paginator declaration
@@ -37,5 +38,18 @@ addRows(event:any) {
    
     console.log(this.clickedRow);
   }
+  //adding rows won't work either
+  addRows(event:any) {
+    this.clickedRow.add(event.target.value);
+  }
 
+  //Search Code
+  searchByName(){
+    this.dataSource.filterPredicate = (data,filter)=>{
+      const firstName = data.firstName.toLowerCase();
+      const filterValue = filter.toLowerCase();
+      return firstName.startsWith(filterValue);
+    }
+    this.dataSource.filter = this.nameSearch.trim();
+  }
 }

@@ -1,4 +1,13 @@
 
+
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="User Name" (keyup)="searchByName()" [(ngModel)] = 'nameSearch'>
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</p>
+
 <div class="mat-elevation-z8">
     <table matSort mat-table [dataSource]="dataSource">
 

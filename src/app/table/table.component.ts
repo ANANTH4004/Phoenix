@@ -3,6 +3,7 @@ import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { User } from 'src/Classes & Interface/User';
 import { TableService } from '../Services/table.service';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-table',
@@ -18,6 +19,9 @@ addRows(event:any) {
   //paginator declaration
   @ViewChild(MatPaginator) paginator !: MatPaginator;
 
+  //adding MatSort
+  @ViewChild(MatSort) matsort !: MatSort;
+
   clickedRow = new Set<User>();
   constructor(private table : TableService){
 
@@ -25,10 +29,12 @@ addRows(event:any) {
   ngOnInit(): void {
     this.table.getAllEmployee().subscribe(data =>{
       this.dataSource.data = data;
+      this.dataSource.sort = this.matsort;
     });
   }
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
+   
     console.log(this.clickedRow);
   }
 

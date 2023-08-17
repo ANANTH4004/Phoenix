@@ -51,5 +51,6 @@ export class TableComponent implements OnInit, AfterViewInit{
       return firstName.startsWith(filterValue);
     }
     this.dataSource.filter = this.nameSearch.trim();
+    //this.dataSource.sort = this.matsort;
   }
 }

@@ -1,0 +1,13 @@
+<mat-form-field>
+    <mat-label>Select Continent</mat-label>
+    <mat-select (selectionChange)="updateCountryOptions($event.value)">
+      <mat-option *ngFor="let continent of continents" [value]="continent">{{ continent }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select Country</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let country of secondDropdownOptions" [value]="country">{{ country }}</mat-option>
+    </mat-select>
+  </mat-form-field>

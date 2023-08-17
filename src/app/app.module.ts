@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './Material/material.module';
 import { TableComponent } from './table/table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DataStoreComponent,
-    TableComponent
+    TableComponent,
+    DoubleDropdownComponent
   ],
   imports: [
     BrowserModule,

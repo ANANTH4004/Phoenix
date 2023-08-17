@@ -9,36 +9,36 @@
 </p>
 
 <div class="mat-elevation-z8">
-    <table matSort mat-table [dataSource]="dataSource">
+    <mat-table [dataSource]="dataSource" matSort >
 
       <ng-container matColumnDef="userId">
-        <th mat-header-cell mat-sort-header *matHeaderCellDef> User ID </th>
-        <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
+        <mat-header-cell mat-sort-header *matHeaderCellDef> User ID </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.userId}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="firstName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>First Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+        <mat-header-cell *matHeaderCellDef mat-sort-header>First Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.firstName}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="lastName">
-        <th mat-header-cell mat-sort-header *matHeaderCellDef> Last Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+        <mat-header-cell mat-sort-header *matHeaderCellDef> Last Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.lastName}} </mat-cell>
       </ng-container>
  
       <ng-container matColumnDef="phoneNumber">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number</th>
-        <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.phoneNumber}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="emailAddress">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
-        <td mat-cell *matCellDef="let element"> {{element.emailAddress}} </td>
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.emailAddress}} </mat-cell>
       </ng-container>
   
-      <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
-      <tr mat-row (click)="addRows($event)"  *matRowDef="let row; columns: displayedColumns;" ></tr>
-    </table>
+      <mat-header-row *matHeaderRowDef="displayedColumns" ></mat-header-row>
+      <mat-row (click)="addRows($event)"  *matRowDef="let row; columns: displayedColumns;" ></mat-row>
+    </mat-table>
   
     <mat-paginator [pageSizeOptions]="[1,3,5]"
                    showFirstLastButtons pageSize="3">

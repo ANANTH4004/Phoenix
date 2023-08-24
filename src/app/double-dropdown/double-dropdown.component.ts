@@ -22,5 +22,9 @@ export class DoubleDropdownComponent {
   updateCountryOptions(continent: string) {
     this.selectedContinent = continent;
     this.secondDropdownOptions = this.countriesByContinent.get(continent) || [];
+    console.log(continent);
+  }
+  onCountryChange(country : String){
+    console.log(country);
   }
 }

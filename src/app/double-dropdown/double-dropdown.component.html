@@ -7,7 +7,7 @@
 
   <mat-form-field>
     <mat-label>Select Country</mat-label>
-    <mat-select>
+    <mat-select (selectionChange)="onCountryChange($event.value)">
       <mat-option *ngFor="let country of secondDropdownOptions" [value]="country">{{ country }}</mat-option>
     </mat-select>
   </mat-form-field>

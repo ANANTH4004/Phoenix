@@ -1,0 +1,28 @@
+// .input-container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 1rem;
+//   }
+
+//   .tables-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .table {
+//     width: calc(50% - 1rem); /* Adjust based on your layout preference */
+//     margin-right: 1rem;
+//     margin-bottom: 1rem;
+//   }
+.table-container {
+  margin-bottom: 20px;
+}
+mat-table {
+  width: 50%;
+  border: 1px solid black;
+}
+mat-header-cell, mat-cell {
+  padding: 8px;
+  text-align: left;
+}

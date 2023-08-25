@@ -1,0 +1,60 @@
+<!-- your-component.component.html
+<div class="p-tables-container">
+  <div class="p-subcomponent-table">
+    <div class="p-input-button-row">
+      <div class="p-inputtext">
+        <mat-form-field>
+          <input matInput type="text" [(ngModel)]="componentName" placeholder="Enter component name">
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-raised-button color="primary" (click)="addComponent()">
+          Add Component
+        </button>
+      </div>
+    </div>
+
+    <div class="p-input-button-row p-mt-2">
+      <div class="p-inputtext">
+        <mat-form-field>
+          <input matInput type="text" [(ngModel)]="subcomponentName" placeholder="Enter subcomponent name">
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-raised-button color="primary" (click)="addSubcomponent()">
+          Add Subcomponent
+        </button>
+      </div>
+    </div>
+
+
+    <div *ngFor="let component of componentList; let i = index">
+      <h3>{{ component.name }} Subcomponents</h3>
+      <table mat-table [dataSource]="component.subcomponents" class="mat-elevation-z8">
+        <ng-container matColumnDef="subcomponent">
+          <th mat-header-cell *matHeaderCellDef> Subcomponents </th>
+          <td mat-cell *matCellDef="let subcomponent"> {{ subcomponent }} </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['subcomponent']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['subcomponent'];"></tr>
+      </table>
+
+      <br *ngIf="i < componentList.length - 1">
+    </div>
+  </div>
+</div> -->
+
+//table data showing
+<div *ngFor="let item of data" class="table-container">
+  <table mat-table [dataSource]="item.subcomponents">
+    <ng-container matColumnDef="subcomponent">
+      <th mat-header-cell *matHeaderCellDef>{{ item.name }}</th>
+      <td mat-cell *matCellDef="let subcomponent">{{ subcomponent }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['subcomponent']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['subcomponent']"></tr>
+  </table>
+</div>
+
+

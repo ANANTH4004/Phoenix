@@ -10,6 +10,7 @@ import { MaterialModule } from './Material/material.module';
 import { TableComponent } from './table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.component';
+import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.compo
     AppComponent,
     DataStoreComponent,
     TableComponent,
-    DoubleDropdownComponent
+    DoubleDropdownComponent,
+    DynamicAddingComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { TableComponent } from './table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.component';
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
+import { GridlistComponent } from './gridlist/gridlist.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.componen
     DataStoreComponent,
     TableComponent,
     DoubleDropdownComponent,
-    DynamicAddingComponent
+    DynamicAddingComponent,
+    GridlistComponent
   ],
   imports: [
     BrowserModule,

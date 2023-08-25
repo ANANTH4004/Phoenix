@@ -1,0 +1,139 @@
+// /* Styling for grid list */
+// .mat-grid-list.grid-list {
+//     margin: 20px !important; /* Add spacing around the grid list */
+//   }
+
+//   /* Styling for grid tiles */
+//   .grid-tile {
+//     background-color: #b11b1b;
+//     padding: 16px;
+//     border-radius: 8px;
+//     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+//   }
+
+//   /* Styling for tables */
+//   .collection-table {
+//     width: 100%; /* Set the table width to 100% */
+//     max-width: 400px; /* Adjust this value based on your design */
+//     border-collapse: collapse;
+//     border: 2px solid #3498db; /* Set your desired border color */
+//     background-color: #ecf0f1; /* Set your desired table background color */
+//   }
+
+//   .mat-header-cell,
+//   .mat-cell {
+//     padding: 8px;
+//     text-align: center; /* Center-align the table cells */
+//   }
+
+//   .mat-header-row {
+//     background-color: #e0e0e0;
+//   }
+
+//   .input-card {
+//     width: 80%;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     margin: 20px auto;
+//   }
+
+//   .input-button-container {
+//     display: flex;
+//     gap: 16px;
+//     align-items: center;
+//   }
+
+//   .input2-container {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 16px;
+//     align-items: flex-end;
+//   }
+
+
+//   /* Styling for the table container */
+// .table-container {
+//     width: 50%;
+//     height:70%; /* Set your desired max height */
+//     overflow-y: auto; /* Enable vertical scrollbar */
+//   }
+
+//   /* Rest of your existing styles */
+/* Styling for grid list */
+// .mat-grid-list.grid-list {
+// //  margin: 20px !important; /* Add spacing around the grid list */
+// }
+/* Styling for grid list */
+.mat-grid-list.grid-list {
+    margin: 20px !important; /* Add spacing around the grid list */
+  }
+
+  /* Styling for grid tiles */
+  .grid-tile {
+    background-color: #b11b1b;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styling for tables */
+  .collection-table {
+    width: 100%; /* Set the table width to 100% */
+    max-width: 400px; /* Adjust this value based on your design */
+    border-collapse: collapse;
+    border: 2px solid #3498db; /* Set your desired border color */
+    background-color: #ecf0f1; /* Set your desired table background color */
+  }
+
+  .collection-table th {
+    background-color: #3498db; /* Set header background color */
+    color: white; /* Set header text color */
+    width: 150px; /* Set a fixed width for header cells */
+  }
+
+  .mat-header-cell,
+  .mat-cell {
+    padding: 8px;
+    text-align: center; /* Center-align the table cells */
+  }
+
+  .mat-header-row {
+    background-color: #e0e0e0;
+  }
+
+  /* Styling for input card */
+  .input-card {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-button-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .input2-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  /* Styling for the table container */
+  .table-container {
+    width: 100%;
+    max-height: 300px; /* Set your desired max height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+
+  /* Rest of your existing styles */

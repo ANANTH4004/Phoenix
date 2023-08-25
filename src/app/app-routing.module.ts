@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.component';
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
+import { GridlistComponent } from './gridlist/gridlist.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/tables', pathMatch: 'full' },
-  { path: 'tables', component:DynamicAddingComponent, pathMatch: 'full' },
-  { path: '**', redirectTo: '/tables' }
+  {path: "" , component: GridlistComponent}
 ];
 
 @NgModule({

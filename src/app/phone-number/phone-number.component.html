@@ -1,1 +1,14 @@
-<p>phone-number works!</p>
+<form [formGroup]="register">
+    <label>Phone</label>
+    <div>
+      <ng-container *ngIf="countries">
+        <select (change)="resetPhoneNumber($event)" [(ngModel)]="selectedCountry" [ngModelOptions]="{standalone: true}">
+          <option *ngFor="let country of countries" [ngValue]="country.code">{{country.name}}</option>
+        </select>
+      </ng-container>
+      <input type="tel" (input)="formatPhoneNumber($event)" formControlName="phone">
+    </div>
+    <div>
+      <input type="submit" value="Submit" [disabled]="!register.valid">
+    </div>
+  </form>

@@ -4,9 +4,10 @@ import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.compo
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
 import { MobileNumberComponent } from './mobile-number/mobile-number.component';
+import { PhoneNumberComponent } from './phone-number/phone-number.component';
 
 const routes: Routes = [
-  {path: "" , component: MobileNumberComponent}
+  {path: "" , component: PhoneNumberComponent}
 ];
 
 @NgModule({

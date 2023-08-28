@@ -17,6 +17,12 @@ import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { IntlInputPhoneModule } from 'intl-input-phone';
+import { PhoneNumberComponent } from './phone-number/phone-number.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,11 +32,14 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     DoubleDropdownComponent,
     DynamicAddingComponent,
     GridlistComponent,
-    MobileNumberComponent
+    MobileNumberComponent,
+    PhoneNumberComponent
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule,
+    IntlInputPhoneModule,
     BrowserAnimationsModule,
     FormsModule,
     MatIconModule,
@@ -38,6 +47,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     HttpClientModule,
     ReactiveFormsModule,
     NgxIntlTelInputModule,
+
 
   ],
   providers: [],

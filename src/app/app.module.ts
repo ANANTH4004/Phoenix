@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.component';
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
+import { MobileNumberComponent } from './mobile-number/mobile-number.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GridlistComponent } from './gridlist/gridlist.component';
     TableComponent,
     DoubleDropdownComponent,
     DynamicAddingComponent,
-    GridlistComponent
+    GridlistComponent,
+    MobileNumberComponent
   ],
   imports: [
     BrowserModule,

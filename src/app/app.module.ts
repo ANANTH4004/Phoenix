@@ -13,6 +13,9 @@ import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.compo
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
 import { MobileNumberComponent } from './mobile-number/mobile-number.component';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+import {  ReactiveFormsModule } from '@angular/forms';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { MobileNumberComponent } from './mobile-number/mobile-number.component';
     FormsModule,
     MatIconModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgxIntlTelInputModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

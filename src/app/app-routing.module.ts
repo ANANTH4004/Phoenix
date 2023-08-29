@@ -5,9 +5,10 @@ import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.componen
 import { GridlistComponent } from './gridlist/gridlist.component';
 import { MobileNumberComponent } from './mobile-number/mobile-number.component';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
+import { MobileNumberInputMatComponent } from './mobile-number-input-mat/mobile-number-input-mat.component';
 
 const routes: Routes = [
-  {path: "" , component: PhoneNumberComponent}
+  {path: "" , component: MobileNumberInputMatComponent}
 ];
 
 @NgModule({

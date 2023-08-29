@@ -21,7 +21,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { IntlInputPhoneModule } from 'intl-input-phone';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
-
+import { MobileNumberInputMatComponent } from './mobile-number-input-mat/mobile-number-input-mat.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask'
+//import { NgxMaskModule} from 'ngx-mask/lib/ngx-mask.module';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { PhoneNumberComponent } from './phone-number/phone-number.component';
     DynamicAddingComponent,
     GridlistComponent,
     MobileNumberComponent,
-    PhoneNumberComponent
+    PhoneNumberComponent,
+    MobileNumberInputMatComponent
   ],
   imports: [
 
@@ -47,8 +50,7 @@ import { PhoneNumberComponent } from './phone-number/phone-number.component';
     HttpClientModule,
     ReactiveFormsModule,
     NgxIntlTelInputModule,
-
-
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

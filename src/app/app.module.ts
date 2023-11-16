@@ -13,7 +13,7 @@ import { DoubleDropdownComponent } from './double-dropdown/double-dropdown.compo
 import { DynamicAddingComponent } from './dynamic-adding/dynamic-adding.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
 import { MobileNumberComponent } from './mobile-number/mobile-number.component';
-import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+
 import {  ReactiveFormsModule } from '@angular/forms';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
@@ -23,6 +23,7 @@ import { IntlInputPhoneModule } from 'intl-input-phone';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { MobileNumberInputMatComponent } from './mobile-number-input-mat/mobile-number-input-mat.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { NgxIntlTelInputModule } from '@le2xx/ngx-intl-tel-input';
 //import { NgxMaskModule} from 'ngx-mask/lib/ngx-mask.module';
 
 
@@ -49,8 +50,8 @@ import { NgxMaskModule, IConfig } from 'ngx-mask'
     MaterialModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxIntlTelInputModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    NgxIntlTelInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

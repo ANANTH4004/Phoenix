@@ -7,9 +7,10 @@ import { MobileNumberComponent } from './mobile-number/mobile-number.component';
 import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { MobileNumberInputMatComponent } from './mobile-number-input-mat/mobile-number-input-mat.component';
 import { TableComponent } from './table/table.component';
+import { DropdownInputAutocompleteComponent } from './dropdown-input-autocomplete/dropdown-input-autocomplete.component';
 
 const routes: Routes = [
-  {path: "" , component: TableComponent}
+  {path: "" , component: DropdownInputAutocompleteComponent}
 ];
 
 @NgModule({

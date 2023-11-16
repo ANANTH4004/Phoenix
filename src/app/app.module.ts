@@ -24,6 +24,7 @@ import { PhoneNumberComponent } from './phone-number/phone-number.component';
 import { MobileNumberInputMatComponent } from './mobile-number-input-mat/mobile-number-input-mat.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
 import { NgxIntlTelInputModule } from '@le2xx/ngx-intl-tel-input';
+import { DropdownInputAutocompleteComponent } from './dropdown-input-autocomplete/dropdown-input-autocomplete.component';
 //import { NgxMaskModule} from 'ngx-mask/lib/ngx-mask.module';
 
 
@@ -37,7 +38,8 @@ import { NgxIntlTelInputModule } from '@le2xx/ngx-intl-tel-input';
     GridlistComponent,
     MobileNumberComponent,
     PhoneNumberComponent,
-    MobileNumberInputMatComponent
+    MobileNumberInputMatComponent,
+    DropdownInputAutocompleteComponent
   ],
   imports: [
 
